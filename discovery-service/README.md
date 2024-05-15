@@ -1,4 +1,4 @@
-# bookstore
+# discovery-service
 
 This project uses Quarkus, the Supersonic Subatomic Java Framework.
 
@@ -43,6 +43,22 @@ Or, if you don't have GraalVM installed, you can run the native executable build
 ./mvnw package -Dnative -Dquarkus.native.container-build=true
 ```
 
-You can then execute your native executable with: `./target/bookstore-1.0.0-SNAPSHOT-runner`
+You can then execute your native executable with: `./target/discovery-service-1.0-SNAPSHOT-runner`
 
 If you want to learn more about building native executables, please consult https://quarkus.io/guides/maven-tooling.
+
+## Related Guides
+
+- Consul Config ([guide](https://quarkiverse.github.io/quarkiverse-docs/quarkus-config-extensions/dev/consul.html)): Read runtime configuration from Consul Key - Value store
+- YAML Configuration ([guide](https://quarkus.io/guides/config-yaml)): Use YAML to configure your Quarkus application
+- SmallRye Stork ([guide](https://quarkus.io/guides/stork)): SmallRye Stork is a dynamic service discovery and selection framework for locating and selecting service instances.
+
+## Provided Code
+
+### YAML Config
+
+Configure your application with YAML
+
+[Related guide section...](https://quarkus.io/guides/config-reference#configuration-examples)
+
+The Quarkus application configuration is located in `src/main/resources/application.yml`.
