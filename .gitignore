@@ -41,3 +41,11 @@ nb-configuration.xml
 
 # Plugin directory
 /.quarkus/cli/plugins/
+
+
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+# IPython
+profile_default/
+ipython_config.py
