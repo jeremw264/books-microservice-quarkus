@@ -1,2 +1,30 @@
-greeting:
-  message: "hello"
+quarkus:
+  application:
+    name: auth-service
+
+  log:
+    level: INFO
+    category:
+      "com.jeremw.bookstore":
+        level: DEBUG
+
+  hibernate-orm:
+    database:
+      generation: drop-and-create
+
+  smallrye-openapi:
+    info-title: Auth service
+    info-description: This service allows CRUD operations on a user
+    info-version: 1.0
+    info-contact-name: Jérémy Woirhaye
+
+  http:
+    cors:
+      ~: true
+      origins: "*"
+
+auth:
+  password:
+    secret: secret
+    iteration: 33
+    key-length: 256
